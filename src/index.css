@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+/* Cyberpunk Theme - Global Styles */
+@layer theme {
+    body {
+        background: radial-gradient(circle at top, #0f0f0f, #000000 80%);
+        color: #e0e0e0;
+        font-family: 'Orbitron', sans-serif;
+        letter-spacing: 0.5px;
+        overflow-x: hidden;
+    }
+
+    .neon-text {
+        color: #00fff7;
+        text-shadow: 0 0 10px #00fff7, 0 0 20px #ff00ff;
+    }
+
+    .neon-btn {
+        background: linear-gradient(90deg, #ff00ff, #00fff7);
+        color: #000;
+        font-weight: bold;
+        border-radius: 12px;
+        box-shadow: 0 0 15px rgba(255, 0, 255, 0.8), 0 0 25px rgba(0, 255, 255, 0.8);
+        transition: transform 0.2s ease, box-shadow 0.3s ease;
+    }
+
+    .neon-btn:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 25px rgba(255, 0, 255, 1), 0 0 35px rgba(0, 255, 255, 1);
+    }
+
+    .neon-box {
+        border: 1px solid rgba(255, 0, 255, 0.4);
+        box-shadow: 0 0 10px rgba(255, 0, 255, 0.6), 0 0 20px rgba(0, 255, 255, 0.6);
+        border-radius: 15px;
+    }
+}
